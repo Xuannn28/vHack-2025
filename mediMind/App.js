@@ -12,8 +12,8 @@ const Stack = createStackNavigator();
 export default function App() {
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName="Language">
-      <Stack.Screen name="Language" component={Language} />
+      <Stack.Navigator initialRouteName="Language Preference">
+      <Stack.Screen name="Language Preference" component={Language} />
         <Stack.Screen name="SignIn" component={SignIn} />
       </Stack.Navigator>
     </NavigationContainer>
