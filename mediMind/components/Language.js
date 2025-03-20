@@ -65,7 +65,7 @@ const Language = ({ navigation }) => {
                     setError('Please select a language.');
                 } else {
                     setError('');
-                    navigation.navigate('SignIn');
+                    navigation.navigate('Sign In');
                 }
             }}
             >

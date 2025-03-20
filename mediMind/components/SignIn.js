@@ -73,7 +73,7 @@ const SignIn = ({ navigation }) => {
                 borderWidth: 1, 
                 borderColor: '#ccc' // Border color
             }}>
-                {/* Email Icon Inside Text Field */}
+                {/* Password Icon Inside Text Field */}
                 <Image
                     source={assets.password}
                     style={{ 
@@ -145,14 +145,14 @@ const SignIn = ({ navigation }) => {
             {/* Sign Up */}
             <View style={{ flexDirection: 'row', justifyContent: 'center', marginTop: 20 }}>
               <Text style={{ color: '#002147' }}>Don't have an account?</Text>
-              <TouchableOpacity onPress={() => navigation.navigate('SignUp')}>
+              <TouchableOpacity onPress={() => navigation.navigate('Sign Up')}>
                 <Text style={{ color: '#002147', fontWeight: 'bold', marginLeft: 5 }}>Sign Up</Text>
               </TouchableOpacity>
             </View>
 
             {/* forgot password */}
             <View style={{ flexDirection: 'row', justifyContent: 'center', marginTop: 20 }}>
-              <TouchableOpacity onPress={() => navigation.navigate('ForgotPassword')}>
+              <TouchableOpacity onPress={() => navigation.navigate('Forgot Password')}>
                 <Text style={{ color: '#002147', fontWeight: 'bold' }}>Forgot Password?</Text>
               </TouchableOpacity>
             </View>
