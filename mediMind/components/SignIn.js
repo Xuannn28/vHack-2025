@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState}  from 'react'
 import { View, Text, Button, TextInput, TouchableOpacity, Image } from 'react-native';
 import { assets } from '../assets/assets';
 
@@ -118,7 +118,7 @@ const SignIn = ({ navigation }) => {
                   setError('Please fill in all fields.');
                 } else {
                   setError('');
-                  navigation.navigate('GetStarted');
+                  navigation.navigate('Personal Details');
                 }
               }}
             >
