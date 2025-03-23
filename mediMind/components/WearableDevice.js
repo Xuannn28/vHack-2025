@@ -50,7 +50,7 @@ const WearableDevice = ({navigation}) => {
             marginTop: 10,
             alignItems: 'center'
             }}
-            onPress={() => navigation.navigate('GetStarted')}   // TODO: change to dashboard
+            onPress={() => navigation.navigate('Dashboard')}   // TODO: change to dashboard
         >
             <Text style={{ color: "#002147", fontWeight: 'bold'}}>Skip for now</Text>
             </TouchableOpacity>
