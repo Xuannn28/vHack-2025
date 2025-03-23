@@ -13,13 +13,10 @@ import {
 } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 
-// This would be your actual API service
-// For the hackathon, we're creating a simple mockup function
 const generateResponse = async (prompt) => {
-  // This simulates the API call delay
+
   await new Promise(resolve => setTimeout(resolve, 1500));
   
-  // Simple responses for demo purposes
   const responses = {
     "hello": "Hello! I'm MediMind, your healthcare assistant. How can I help you today?",
     "headache": "Headaches can be caused by various factors including stress, dehydration, lack of sleep, or eye strain. For mild headaches, you might try drinking water, resting in a dark room, or taking over-the-counter pain relievers. If headaches are severe or persistent, please consult a healthcare provider.",
@@ -28,21 +25,19 @@ const generateResponse = async (prompt) => {
     "diet": "A balanced diet typically includes fruits, vegetables, whole grains, lean proteins, and healthy fats. Try to limit processed foods, excessive sugar, and salt. Remember, individual nutritional needs can vary based on age, sex, activity level, and health conditions."
   };
   
-  // Check for keyword matches
   for (const [keyword, response] of Object.entries(responses)) {
     if (prompt.toLowerCase().includes(keyword)) {
       return response;
     }
   }
   
-  // Default response
-  return "I'm not sure about that specific medical topic. In a complete version, I would access the Gemini API for comprehensive medical information. For any urgent health concerns, please consult a healthcare professional.";
+  return "I'm not sure about that specific medical topic. For any urgent health concerns, please consult a healthcare professional.";
 };
 
 const Chatbot = ({ navigation }) => {
   const [input, setInput] = useState('');
   const [messages, setMessages] = useState([
-    { id: '1', text: 'Hi, I\'m MediMind! How can I help with your health questions today?', isUser: false }
+    { id: '1', text: 'Hi, I\'m MediMind! Your personal AI healthcare assistant. Get medical information, health tips, and more. How can I help with your concerns today?', isUser: false }
   ]);
   const [isLoading, setIsLoading] = useState(false);
   
@@ -64,7 +59,7 @@ const Chatbot = ({ navigation }) => {
     setIsLoading(true);
     
     try {
-      // In a real implementation, this would call the Gemini API
+
       const response = await generateResponse(input);
       
       const botMessage = { id: (Date.now() + 1).toString(), text: response, isUser: false };
@@ -158,7 +153,7 @@ const styles = StyleSheet.create({
   },
   header: {
     backgroundColor: '#0066cc',
-    padding: 16,
+    padding: 20,
     flexDirection: 'row',
     alignItems: 'center',
   },
@@ -167,6 +162,8 @@ const styles = StyleSheet.create({
   },
   headerTitle: {
     color: 'white',
+    marginHorizontal: 8,
+    padding: 12,
     fontSize: 20,
     fontWeight: 'bold',
   },

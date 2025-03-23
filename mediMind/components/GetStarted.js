@@ -33,13 +33,6 @@ const GetStarted = ({ navigation }) => {
           <Ionicons name="chatbubble-ellipses" size={24} color="white" />
         </TouchableOpacity>
 
-        <TouchableOpacity 
-          style={styles.chatButton}
-          onPress={() => navigation.navigate('TranscriptionHomeScreen')}
-        >
-          <Text style={styles.chatButtonText}>Transcription</Text>
-          <Ionicons name="chatbubble-ellipses" size={24} color="white" />
-        </TouchableOpacity>
       </View>
     </SafeAreaView>
   );
