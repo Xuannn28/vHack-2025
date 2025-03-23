@@ -1,4 +1,4 @@
-import React from 'react'
+import React , {useState} from 'react'
 import { View, Text, Button, TextInput, TouchableOpacity, Image } from 'react-native';
 import { assets } from '../assets/assets';
 import { MaterialCommunityIcons } from '@expo/vector-icons';
