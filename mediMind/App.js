@@ -11,6 +11,7 @@ import GetStarted from './components/GetStarted';
 import Chatbot from './components/Chatbot';
 import ForgotPassword from './components/ForgotPassword';
 import PersonalDetails from './components/PersonalDetails';
+import WearableDevice from './components/WearableDevice';
 
 const Stack = createStackNavigator();
 
@@ -24,6 +25,7 @@ export default function App() {
         <Stack.Screen name="Sign Up" component={SignUp} />
         <Stack.Screen name="Forgot Password" component={ForgotPassword} />
         <Stack.Screen name="Personal Details" component={PersonalDetails} />
+        <Stack.Screen name="Wearable Device" component={WearableDevice} />
         
         <Stack.Screen name="GetStarted" component={GetStarted} options={{ headerShown: false }}/>
         <Stack.Screen name="Chatbot" component={Chatbot} options={{ headerShown: false }}/>
