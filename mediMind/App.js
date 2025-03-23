@@ -22,6 +22,7 @@ import DoctorDetail from './components/DoctorDetail';
 import DoctorAppointment from './components/DoctorAppointment';
 import PatientDetails from './components/PatientDetails';
 import Contact from './components/Contact';
+import Notifications from './components/Notifications';
 
 const Stack = createStackNavigator();
 
@@ -43,6 +44,7 @@ export default function App() {
         <Stack.Screen name="AppointmentSummary" component={AppointmentDetailScreen} />
         <Stack.Screen name="Chatbot" component={Chatbot} options={{ headerShown: false }}/>
         <Stack.Screen name="Contact" component={Contact} options={{ title: 'Emergency Support' }} />
+        <Stack.Screen name="Notifications" component={Notifications} />
 
         <Stack.Screen name="Dashboard" component={Dashboard} options={{ title: 'Dashboard', headerBackTitle: 'Back', }} />
         <Stack.Screen name="DoctorsSelection" component={DoctorsSelection} options={{ title: 'Select Doctor', headerBackTitle: 'Back', }} />
