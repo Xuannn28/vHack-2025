@@ -9,6 +9,7 @@ import SignIn from './components/SignIn';
 import SignUp from './components/SignUp';
 import GetStarted from './components/GetStarted';
 import Chatbot from './components/Chatbot';
+import ForgotPassword from './components/ForgotPassword';
 
 const Stack = createStackNavigator();
 
@@ -20,6 +21,7 @@ export default function App() {
         <Stack.Screen name="Language Preference" component={Language} />
         <Stack.Screen name="Sign In" component={SignIn} />
         <Stack.Screen name="Sign Up" component={SignUp} />
+        <Stack.Screen name="Forgot Password" component={ForgotPassword} />
         <Stack.Screen name="GetStarted" component={GetStarted} options={{ headerShown: false }}/>
         <Stack.Screen name="Chatbot" component={Chatbot} options={{ headerShown: false }}/>
       </Stack.Navigator>
