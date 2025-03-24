@@ -26,12 +26,12 @@ const Dashboard = ({navigation}) => {
                     </View>
                 </View>
                 
-                <Text style={styles.greeting}>
-                    Hello ALEX!
-                </Text>
-                <Text style={styles.subGreeting}>
-                    How are you feeling today?
-                </Text>
+                <View style={styles.greetingContainer}>
+                    <View>
+                        <Text style={styles.greeting}>Hello ALEX!</Text>
+                        <Text style={styles.subGreeting}>How are you feeling today?</Text>
+                    </View>
+                </View>
 
                 <View style={styles.vaccineCard}>
                     <View style={styles.vaccineCardContent}>  
@@ -96,9 +96,27 @@ const Dashboard = ({navigation}) => {
                             </Text>
                         </View>
                     </TouchableOpacity>
+
+                    <View style={styles.vitalsSection}>
+                        <Text style={styles.sectionTitle}>Today's Vitals</Text>
+                        <View style={styles.vitalsContainer}>
+                            <View style={styles.vitalItem}>
+                                <Ionicons name="heart" size={24} color="#e74c3c" />
+                                <Text style={styles.vitalText}>72 bpm</Text>
+                    </View>
+                    <View style={styles.vitalItem}>
+                            <MaterialIcons name="bloodtype" size={24} color="#2c3e50" />
+                            <Text style={styles.vitalText}>120/80</Text>
+                    </View>
+                    <View style={styles.vitalItem}>
+                            <MaterialIcons name="directions-walk" size={24} color="#2c3e50" />
+                            <Text style={styles.vitalText}>2.5k</Text>
+                    </View>
                 </View>
             </View>
-        </SafeAreaView>
+        </View>
+    </View>        
+    </SafeAreaView>
     );
 };
 
@@ -143,14 +161,48 @@ const styles = StyleSheet.create({
         height: 60,
         borderRadius: 30,
     },
+    greetingContainer: {
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        alignItems: 'center',
+        marginBottom: 15,
+    },
+    vitalsSection: {
+        marginTop: 15,
+        padding: 16,
+        backgroundColor: '#FFFFFF',
+        borderRadius: 15,
+        shadowColor: '#000',
+        shadowOffset: { width: 0, height: 1 },
+        shadowOpacity: 0.2,
+        shadowRadius: 1.5,
+    },
+    sectionTitle: {
+        fontSize: 16,
+        fontWeight: 'bold',
+        marginBottom: 15,
+        color: '#2c3e50',
+    },
+    vitalsContainer: {
+        flexDirection: 'row',
+        justifyContent: 'space-around',
+        alignItems: 'center',
+    },
+    vitalItem: {
+        alignItems: 'center',
+    },
+    vitalText: {
+        marginLeft: 8,
+        fontSize: 14,
+        fontWeight: '600',
+        color: '#2c3e50',
+    },
     greeting: {
         fontSize: 18, 
         fontWeight: 'bold', 
-        marginTop: 10
     },
     subGreeting: {
         color: 'gray', 
-        marginBottom: 20, 
         fontSize: 14
     },
     vaccineCard: {
@@ -158,7 +210,7 @@ const styles = StyleSheet.create({
         padding: 30,
         borderRadius: 15,
         width: '100%',
-        height: 180,
+        height: 160,
         alignSelf: 'center',
         flexDirection: 'row',
         alignItems: 'center',
@@ -193,13 +245,13 @@ const styles = StyleSheet.create({
         resizeMode: 'contain'
     },
     featuresContainer: {
-        marginTop: 30, 
+        marginTop: 10, 
         width: '100%'
     },
     featureButton: {
         flexDirection: 'row', 
         alignItems: 'center', 
-        paddingVertical: 20,  
+        paddingVertical: 15,  
         borderRadius: 12, 
         width: '100%',
         alignSelf: 'center',
@@ -225,9 +277,9 @@ const styles = StyleSheet.create({
         fontWeight: 'bold'
     },
     featureDescription: {
-        fontSize: 14, 
+        fontSize: 15, 
         color: 'gray', 
-        marginTop: 5, 
+        marginTop: 3, 
         flexWrap: 'wrap'
     }
 });
