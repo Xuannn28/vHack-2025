@@ -38,16 +38,16 @@ export default function App() {
         <Stack.Screen name="Personal Details" component={PersonalDetails} />
         <Stack.Screen name="Wearable Device" component={WearableDevice} />
         
-        <Stack.Screen name="HomeScreen" component={HomeScreen} />
+        <Stack.Screen name="HomeScreen" component={HomeScreen} options={{ title: 'Speech to Text' }}/>
         <Stack.Screen name="Upload" component={UploadScreen} />
         <Stack.Screen name="Processing" component={ProcessingScreen} />
         <Stack.Screen name="AppointmentSummary" component={AppointmentDetailScreen} />
         <Stack.Screen name="Chatbot" component={Chatbot} options={{ headerShown: false }}/>
         <Stack.Screen name="Contact" component={Contact} options={{ title: 'Emergency Support' }} />
-        <Stack.Screen name="Notifications" component={Notifications} />
+        <Stack.Screen name="Notifications" component={Notifications} options={{ headerShown: false }} />
 
         <Stack.Screen name="Dashboard" component={Dashboard} options={{ title: 'Dashboard', headerBackTitle: 'Back', }} />
-        <Stack.Screen name="DoctorsSelection" component={DoctorsSelection} options={{ title: 'Select Doctor', headerBackTitle: 'Back', }} />
+        <Stack.Screen name="DoctorsSelection" component={DoctorsSelection} options={{ title: 'Book an Appointment', headerBackTitle: 'Back', }} />
         <Stack.Screen name="DoctorDetail" component={DoctorDetail} options={{ title: 'Doctor Details', headerBackTitle: 'Back', }} />
         <Stack.Screen name="DoctorAppointment" component={DoctorAppointment} options={{ title: 'New Appointment' }} />
         <Stack.Screen name="PatientDetails" component={PatientDetails} />

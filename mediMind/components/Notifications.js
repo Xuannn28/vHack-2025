@@ -69,9 +69,7 @@ const NotificationsScreen = ({ navigation }) => {
   const markAsRead = (id) => {
     setNotifications(
       notifications.map(notification =>
-        notification.id === id
-          ? { ...notification, read: true }
-          : notification
+        notification.id === id ? { ...notification, read: true } : notification
       )
     );
   };
