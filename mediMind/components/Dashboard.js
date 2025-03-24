@@ -1,9 +1,10 @@
 import React from 'react';
-import { View, Text, Button, Image, TouchableOpacity, StyleSheet, SafeAreaView } from 'react-native';
+import { View, Text, Button, Image, TouchableOpacity, StyleSheet, SafeAreaView, ScrollView } from 'react-native';
 import { Ionicons, MaterialIcons } from '@expo/vector-icons'; 
 
 const Dashboard = ({navigation}) => {
     return(
+         <ScrollView style={{flex:1}}>
         <SafeAreaView style={styles.safeArea}>
             <View style={styles.container}>
                 <View style={styles.header}>
@@ -117,6 +118,7 @@ const Dashboard = ({navigation}) => {
         </View>
     </View>        
     </SafeAreaView>
+    </ScrollView>
     );
 };
 

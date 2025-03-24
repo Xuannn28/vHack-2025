@@ -260,7 +260,7 @@ const styles = StyleSheet.create({
     fontWeight: '600',
   },  
   scrollContainer: { 
-    paddingVertical: 12 
+    paddingVertical: 12
   },
   /** Card */
   card: {
@@ -285,11 +285,13 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     backgroundColor: '#9ca1ac',
+    
   },
   cardAvatarText: {
     fontSize: 19,
     fontWeight: 'bold',
     color: '#fff',
+    
   },
   cardBody: {
     marginRight: 'auto',
