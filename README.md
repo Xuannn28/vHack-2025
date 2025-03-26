@@ -9,23 +9,15 @@ MediMind is an AI-powered healthcare assistant designed to enhance disease manag
 
 **Features**
 
-1. Wearable Devices Integration
+1. **Wearable Devices Integration:** Connect with supported wearable devices such as Fitbit, Apple Watch and Garmin to collect vital health data, including heart rate, blood pressure and other key metrics.
 
-Connect with supported wearable devices such as Fitbit, Apple Watch and Garmin to collect vital health data, including heart rate, blood pressure and other key metrics.
+2. **Emergency Mental Health Support:** Access immediate help for mental health crises with one-click call feature for emergency contacts or quick redirection to mental health organizations' websites for professional assistance.
 
-2. Emergency Mental Health Support
-   
-Access immediate help for mental health crises with one-click call feature for emergency contacts or quick redirection to mental health organizations' websites for professional assistance.
+3. **Smart Notifications:** Stay on track with timely reminders for medications, appointments, health tips and mental health check-ins.  
 
-5. Smart Notifications
-Stay on track with timely reminders for medications, appointments, health tips and mental health check-ins.  
+4. **Appointment Management System:** Effortlessly book consultations and appointments with healthcare providers which promotes convenience.
 
-6. Appointment Management System
-Effortlessly book consultations and appointments with healthcare providers which promotes convenience.
+5. **Appointment Transcription:** Convert speech to text of appointments to provide summaries of each appointment accessible for future reference. 
 
-7. Appointment Transcription
-Convert speech to text of appointments to provide summaries of each appointment accessible for future reference. 
-
-8. AI-Powered Chatbot
-Get instant answers to common health-related queries based on common user needs and health information.
+6. **AI-Powered Chatbot::** Get instant answers to common health-related queries based on common user needs and health information.
 
