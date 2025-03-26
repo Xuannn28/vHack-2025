@@ -1,7 +1,7 @@
 
 ![MagicEraser_250325_004101](https://github.com/user-attachments/assets/8ee20320-8a75-4ddb-97a3-c19b8acac527)
 
-***MediMind***
+## MediMind
 
 **Introduction**
 
