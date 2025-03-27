@@ -19,5 +19,5 @@ MediMind is an AI-powered healthcare assistant designed to enhance disease manag
 
 5. **Appointment Transcription:** Convert speech to text of appointments to provide summaries of each appointment accessible for future reference. 
 
-6. **AI-Powered Chatbot::** Get instant answers to common health-related queries based on common user needs and health information.
+6. **AI-Powered Chatbot:** Get instant answers to common health-related queries based on common user needs and health information.
 
